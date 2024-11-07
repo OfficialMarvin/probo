@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wacky Proboscis Monkey Website</title>
+    <style>
+        /* Set up full viewport with a wacky blue background */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            background-color: #00bfff; /* Bright blue background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Style for the centered text box */
+        .text-overlay {
+            color: #fff;
+            font-size: 2em;
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.3); /* Transparent black background */
+            border: 5px dashed #ff69b4; /* Pink dashed border for extra wackiness */
+            border-radius: 15px;
+        }
+
+        /* GIF styling: scattered, random sizes, and fun positioning */
+        .gif-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Prevent blocking the text */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        /* Individual GIF styling */
+        .gif-container img {
+            width: 20%; /* Adjust GIF size */
+            max-width: 200px;
+            height: auto;
+            animation: float 4s infinite alternate ease-in-out;
+        }
+
+        /* Fun floating animation */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px) rotate(10deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Text Overlay -->
+    <div class="text-overlay">
+        <h1>Welcome to the Proboscis Monkey Extravaganza!</h1>
+        <p>Enjoy the absurdity of these glorious monkeys in all their GIF-tastic glory!</p>
+    </div>
+
+    <!-- GIF Container -->
+    <div class="gif-container">
+        <img src="proboscis_monkey1.gif" alt="Proboscis Monkey GIF">
+        <img src="proboscis_monkey2.gif" alt="Proboscis Monkey GIF">
+        <img src="proboscis_monkey3.gif" alt="Proboscis Monkey GIF">
+        <img src="proboscis_monkey4.gif" alt="Proboscis Monkey GIF">
+        <img src="proboscis_monkey5.gif" alt="Proboscis Monkey GIF">
+        <!-- Add more GIFs as needed -->
+    </div>
+
+</body>
+</html>
